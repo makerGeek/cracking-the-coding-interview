@@ -7,16 +7,7 @@ import java.util.*;
 public class One {
     public static void main(String[] args) {
         Node x = new Node(0);   
-        x.appendTail(new Node(5));
-        x.appendTail(new Node(3));
-        x.appendTail(new Node(7));
-        x.appendTail(new Node(8));
-        x.appendTail(new Node(5));
-        x.appendTail(new Node(4));
-        x.appendTail(new Node(2));
-        x.appendTail(new Node(8));
-        x.appendTail(new Node(2));
-        x.appendTail(new Node(5));
+        x.initSample();
         x.print();
         
         deleteDups(x);
