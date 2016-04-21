@@ -53,10 +53,20 @@ public class FourTest {
      * Test of replaceSpaces method, of class Four.
      */
     @Test
-    public void testReplaceSpaces() {
-        System.out.println("replaceSpaces");
+    public void testReplaceSpaces1() {
+        System.out.println("replaceSpaces1");
         String s = "hello good world!";
         char[] expResult = new String("hello%20good%20world!").toCharArray();
+        char[] result = Four.replaceSpaces(s);
+        assertArrayEquals(expResult, result);
+
+    }
+    
+    @Test
+    public void testReplaceSpaces2() {
+        System.out.println("replaceSpaces2");
+        String s = "hello good day!";
+        char[] expResult = new String("hello%20good%20day!").toCharArray();
         char[] result = Four.replaceSpaces(s);
         assertArrayEquals(expResult, result);
 
