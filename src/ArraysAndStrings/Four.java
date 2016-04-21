@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Four {
     public static void main(String[] args) {
-        String s ="hello good world!";
+        String s =args[0];
         System.out.println(Arrays.toString(replaceSpaces(s)));
         
         
