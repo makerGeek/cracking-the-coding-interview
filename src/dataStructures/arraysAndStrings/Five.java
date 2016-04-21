@@ -1,4 +1,4 @@
-package ArraysAndStrings;
+package dataStructures.arraysAndStrings;
 
 /**
  *
