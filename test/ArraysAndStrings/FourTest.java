@@ -43,7 +43,7 @@ public class FourTest {
     @Test
     public void testMain() {
         System.out.println("main");
-        String[] args = new String[]{"hello good world!"};
+        String[] args = new String[]{"hello good day!"};
         Four.main(args);
 
         
