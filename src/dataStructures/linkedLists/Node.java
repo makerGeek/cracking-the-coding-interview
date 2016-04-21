@@ -18,6 +18,10 @@ public class Node {
         this.val = val;
     }
     
-    
+    public void appendTail(Node a){
+        Node runner =this;
+        while(runner.next!=null) runner=runner.next;
+        runner.next=a;
+    }
 
 }
