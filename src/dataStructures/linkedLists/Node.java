@@ -14,6 +14,8 @@ public class Node {
     int val;
     Node next;
 
+    public Node(){}
+    
     public Node(int val) {
         this.val = val;
     }
@@ -36,6 +38,7 @@ public class Node {
 
     public void initSample() {
         Node x = this;
+        x.val=0;
         x.appendTail(new Node(5));
         x.appendTail(new Node(3));
         x.appendTail(new Node(7));

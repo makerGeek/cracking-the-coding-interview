@@ -12,6 +12,6 @@ package dataStructures.linkedLists;
  */
 public class Two {
     public static void main(String[] args) {
-        
+        Node x =new Node();
     }
 }

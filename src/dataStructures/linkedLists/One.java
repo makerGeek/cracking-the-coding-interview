@@ -6,7 +6,7 @@ import java.util.*;
  */
 public class One {
     public static void main(String[] args) {
-        Node x = new Node(0);   
+        Node x = new Node();   
         x.initSample();
         x.print();
         
