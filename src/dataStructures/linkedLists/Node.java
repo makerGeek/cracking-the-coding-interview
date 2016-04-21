@@ -29,6 +29,7 @@ public class Node {
         Node runner = this;
         while(runner!=null){
             System.out.print(runner.val+" ");
+            runner=runner.next;
         }
     }
 }
