@@ -11,7 +11,11 @@ public class Four {
         
     }
     
-    
+    /**
+     * this method replaces all spaces in the string s with %20
+     * @param s string to modify
+     * @return char[] containing the new string in an array of characters
+     */
     static char [] replaceSpaces(String s){
          int nspaces=0;
         
