@@ -10,6 +10,13 @@ public class One {
         System.out.println(unique(q));
     }
     
+    
+    /**
+     * this method checks whether all characters in a string s are unique.
+     * @param s string to perform the check on
+     * @return <ul><li>true if all characters in s are unique</li>
+     *             <li>false otherwise</li></ul>
+     */
     static boolean unique(String s){
         Set<Character> set = new HashSet<>();
         for(int i=0;i<s.length();i++){
