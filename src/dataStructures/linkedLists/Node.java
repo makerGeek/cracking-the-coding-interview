@@ -24,4 +24,11 @@ public class Node {
         runner.next=a;
     }
 
+    
+    public void print(){
+        Node runner = this;
+        while(runner!=null){
+            System.out.print(runner.val+" ");
+        }
+    }
 }
