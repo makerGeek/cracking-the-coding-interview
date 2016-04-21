@@ -9,10 +9,11 @@ import java.util.Arrays;
 public class Six {
 
     public static void main(String[] args) {
-        int[][] matrix = new int[][]{{1, 2, 3, 4},
-        {3, 4, 5, 6},
-        {5, 6, 7, 8},
-        {1, 8, 4, 9}};
+        int[][] matrix = new int[][]{
+            {1, 2, 3, 4},
+            {3, 4, 5, 6},
+            {5, 6, 7, 8},
+            {1, 8, 4, 9}};
         int[][] res = rotateMatrix(matrix);
         System.out.println("original:");
         printMatrix(matrix);
@@ -51,7 +52,6 @@ public class Six {
                 mat[j][i] = aux;
             }
         }
-
 
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat.length / 2; j++) {
