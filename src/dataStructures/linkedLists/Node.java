@@ -14,8 +14,9 @@ public class Node {
     int val;
     Node next;
 
-    public Node(){}
-    
+    public Node() {
+    }
+
     public Node(int val) {
         this.val = val;
     }
@@ -36,9 +37,20 @@ public class Node {
         }
     }
 
+    public void printReverse() {
+        Node runner = this;
+        StringBuilder sb = new StringBuilder();
+        while (runner != null) {
+            sb.append(runner.val + " ");
+            runner = runner.next;
+        }
+        sb.reverse();
+        System.out.println(sb.toString());
+    }
+
     public void initSample() {
         Node x = this;
-        x.val=0;
+        x.val = 0;
         x.appendTail(new Node(5));
         x.appendTail(new Node(3));
         x.appendTail(new Node(7));
