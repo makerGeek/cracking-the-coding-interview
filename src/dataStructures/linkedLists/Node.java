@@ -17,6 +17,16 @@ public class Node {
     public Node() {
     }
 
+
+    static public Node intToNode(int num) {
+        Node node = new Node();
+        while(num>0){
+            node.appendTail(new Node(num%10));
+            num/=10;
+        }
+        return node.next;
+    }
+
     public Node(int val) {
         this.val = val;
     }
